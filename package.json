@@ -1,43 +1,20 @@
 {
-  "name": "webmaker",
-  "version": "0.1.0",
-  "private": true,
+  "name": "Web-Maker-with-React-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "uuid": "^3.3.3"
+    "express": "^4.17.1"
   },
-  "scripts": {
-    "start": "node server.js",
-    "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmeekah/Web-Maker-with-React-client.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
