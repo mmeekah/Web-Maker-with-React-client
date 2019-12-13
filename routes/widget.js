@@ -40,14 +40,14 @@ const widgets = [
   }
 ];
 
-//Create new widget
+// Create new widget
 router.post("/", (req, res) => {
   const newWidget = req.body;
   widgets.push(newWidget);
   res.json(newWidget);
 });
 
-//Get all widgets by given page id
+// Get all widgets by given page id
 router.get("/page/:pid", (req, res) => {
   const pid = req.params.pid;
   const currentWidgets = [];
@@ -56,10 +56,11 @@ router.get("/page/:pid", (req, res) => {
       currentWidgets.push(widgets[i]);
     }
   }
+
   res.json(currentWidgets);
 });
 
-//get widget by given id
+// get widget by given id
 router.get("/:wgid", (req, res) => {
   const wgid = req.params.wgid;
   let widget = null;
@@ -68,10 +69,11 @@ router.get("/:wgid", (req, res) => {
       widget = widgets[i];
     }
   }
+
   res.json(widget);
 });
 
-//Update widget
+// Update widget
 router.put("/", (req, res) => {
   const newWidget = req.body;
   for (let i = 0; i < widgets.length; i++) {
@@ -82,7 +84,7 @@ router.put("/", (req, res) => {
   res.json(newWidget);
 });
 
-//Delete widget
+// Delete widget
 router.delete("/:wgid", (req, res) => {
   const wgid = req.params.wgid;
   for (let i = 0; i < widgets.length; i++) {

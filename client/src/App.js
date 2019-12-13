@@ -19,8 +19,6 @@ import WidgetChooser from "./components/widget/WidgetChooser";
 import WidgetEdit from "./components/widget/WidgetEdit";
 
 function App() {
-  // user data
-
   return (
     <Router>
       <Switch>

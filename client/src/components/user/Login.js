@@ -14,6 +14,7 @@ export default function Login(props) {
       `/api/user?username=${username}&password=${password}`
     );
     const user = res.data;
+
     if (user) {
       history.push(`/user/${user._id}`);
     } else {

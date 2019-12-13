@@ -11,7 +11,7 @@ export default function PageEdit(props) {
 
   useEffect(() => {
     getPage();
-    //eslint-disable-next-line
+    // eslint-disable-next-line
   }, []);
 
   const getPage = async () => {

@@ -1,15 +1,13 @@
-//import express library
 const express = require("express");
 const path = require("path");
 const app = express();
 const connectDB = require("./config/db");
 
-//Connect DB
 connectDB();
 
 app.use(express.json());
 
-// Define Routes
+// Define routes
 app.use("/api/user", require("./routes/user"));
 app.use("/api/website", require("./routes/website"));
 app.use("/api/page", require("./routes/page"));
@@ -22,8 +20,8 @@ if (process.env.NODE_ENV === "production") {
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
-  // }
 }
+
 const PORT = process.env.PORT || 3100;
 
 app.listen(PORT, () => {

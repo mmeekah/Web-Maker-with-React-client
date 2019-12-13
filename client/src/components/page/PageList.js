@@ -9,7 +9,7 @@ export default function PageList(props) {
 
   useEffect(() => {
     getPages();
-    //eslint-disable-next-line
+    // eslint-disable-next-line
   }, []);
 
   const getPages = async () => {
