@@ -1,3 +1,4 @@
 {
-  "mongo": "@ds231719.mlab.com:31719/heroku_gqfwdkjj"
+  "mongo": "@ds231719.mlab.com:31719/heroku_gqfwdkjj",
+  "jwtSecret": "msimbo"
 }
